@@ -26,11 +26,44 @@ header h1 {
 /***** Footer *****/
 
 footer {
-    width: 600px;
-    margin: 0 auto;
+    width: 90%;
+    margin: 50px auto 0 auto;
+    text-align: center;
 }
 
 footer span {
     color: #566;
     font-size: .8rem;
+}
+
+/***** Main *****/
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+    width: 100%;
+}
+
+form {
+    margin-top: 5em;
+}
+
+label {
+    display: block;
+}
+
+input {
+    background-color: #ddd;
+}
+
+.bSpace {
+    margin-bottom: 20px;
+}
+
+.sSpace {
+    margin: 6px 7px;
 }
