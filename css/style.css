@@ -1,0 +1,36 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: Impact, Arial, sans-serif;
+    margin: 0 auto;
+}
+
+/***** Header *****/
+
+header {
+    width: 100%;
+}
+
+header h1 {
+    font-weight: 900;
+    text-align: center;
+    text-transform: uppercase;
+    color: red;
+    font-size: 2em;
+    letter-spacing: .05em;
+    word-spacing: .2em;
+    height: inherit;
+    margin: 15px
+}
+
+/***** Footer *****/
+
+footer {
+    width: 600px;
+    margin: 0 auto;
+}
+
+footer span {
+    color: #566;
+    font-size: .8rem;
+}
