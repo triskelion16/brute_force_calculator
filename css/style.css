@@ -55,7 +55,7 @@ p {
 }
 
 form {
-    margin: 5em auto 0 1em;
+    margin: 3.5em auto 0 1em;
     /*text-align: center;*/
 }
 
@@ -88,4 +88,8 @@ input {
 .button:hover {
     font-weight: 900;
     border: 2px solid white;
+}
+
+span {
+    color: red;
 }
