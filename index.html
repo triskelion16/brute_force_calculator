@@ -13,36 +13,62 @@
     
     <header>
         <h1>Brute force calculator</h1>
-    </header>
-
-    <main>
+        <hr>
         <p>
             The Brute Force Calculator shows you how long it takes for cracking a password!
         </p>
-        
-        <form>
-            <label>Password length<br>
-                <input class="bSpace" type="number" name="passwdLength" placeholder="8 - 63 characters">
-            </label>
-            <label>Speed<br>
-                <input class="bSpace" type="number" name="speed" placeholder="keys per second">
-            </label>
-            
-            <fieldset>
-                <legend>Password complexity:</legend>
-                <input class="sSpace" type="checkbox" name="lowerCase" value="Lower case">Lower case<br>
-                <input class="sSpace" type="checkbox" name="upperCase" value="Upper case">Upper case<br>
-                <input class="sSpace" type="checkbox" name="digits" value="Digits">Digits<br>
-                <input class="sSpace" type="checkbox" name="special" value="Special characters">Special characters
-            </fieldset>
-            
-            <label>
-                <input class="button, sSpace" type="submit" value="Check">
-            </label>
-        </form>
+    </header>
+
+    <main>
+        <section>
+            <form>
+                <label>Password length<br>
+                    <input class="bSpace" type="number" name="passwdLength" placeholder="how many characters">
+                </label>
+                <label>Speed<br>
+                    <input class="bSpace" type="number" name="speed" placeholder="keys per second">
+                </label>
+
+                <fieldset>
+                    <legend>Password complexity:</legend>
+                    <input class="sSpace" type="checkbox" name="lowerCase" value="Lower case">Lower case<br>
+                    <input class="sSpace" type="checkbox" name="upperCase" value="Upper case">Upper case<br>
+                    <input class="sSpace" type="checkbox" name="digits" value="Digits">Digits<br>
+                    <input class="sSpace" type="checkbox" name="special" value="Special characters">Special characters
+                </fieldset>
+
+                <label>
+                    <input class="button" type="submit" value="Check">
+                </label>
+            </form>
+            <hr>
+        </section>
     </main>
+    
+    <section>
+        <p>Password combinations:</p>
+            <p id="combinations">0</p>
+    </section>
+    <section class="hr"><hr></section>
+    <aside>
+            <p>Years:</p>
+            <p id="years">0</p>
+            
+            <p>Days:</p>
+            <p id="days">0</p>
+            
+            <p>Hours:</p>
+            <p id="hours">0</p>
+            
+            <p>Minutes:</p>
+            <p id="minutes">0</p>
+            
+            <p>Seconds:</p>
+            <p id="seconds">0</p>
+    </aside>
 
     <footer>
+        <hr>
         <span>made by Sebastian Solecki</span>
     </footer>
     
