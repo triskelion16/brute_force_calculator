@@ -75,6 +75,10 @@ input {
     margin: 6px 7px;
 }
 
+.check {
+    display: inline;
+}
+
 .button {
     margin: 25px 0;
     font-size: 1.2em;
