@@ -23,21 +23,21 @@
         <section>
             <form>
                 <label>Password length<br>
-                    <input class="bSpace" type="number" name="passwdLength" placeholder="how many characters">
+                    <input id="passLen" class="bSpace" type="number" name="passwdLength" placeholder="how many characters">
                 </label>
                 <label>Speed<br>
-                    <input class="bSpace" type="number" name="speed" placeholder="keys per second">
+                    <input id="speed" class="bSpace" type="number" name="speed" placeholder="keys per second">
                 </label>
 
                 <fieldset>
                     <legend>Password complexity:</legend>
-                    <input class="sSpace" type="checkbox" name="lowerCase" value="Lower case">Lower case<br>
-                    <input class="sSpace" type="checkbox" name="upperCase" value="Upper case">Upper case<br>
-                    <input class="sSpace" type="checkbox" name="digits" value="Digits">Digits<br>
-                    <input class="sSpace" type="checkbox" name="special" value="Special characters">Special characters
+                    <input id="lowerCase" class="sSpace" type="checkbox" name="lowerCase" value="26">Lower case<br>
+                    <input id="upperCase" class="sSpace" type="checkbox" name="upperCase" value="26">Upper case<br>
+                    <input id="digits" class="sSpace" type="checkbox" name="digits" value="10">Digits<br>
+                    <input id="special" class="sSpace" type="checkbox" name="special" value="33">Special characters
                 </fieldset>
 
-                <label class="check" id="button">
+                <label id="check">
                     <input class="button" type="submit" value="Check">
                 </label>
             </form>
@@ -46,27 +46,27 @@
     </main>
     
     <section>
-        <p>Password combinations:</p>
-            <p id="combinations">0</p>
+        <p class="redColour">Password combinations:</p>
+        <p id="passwdCombinations"><span>0</span></p>
     </section>
     <section class="hr"><hr></section>
     <aside>
-        <p><span>It will take about:</span></p><br>
+        <p class="redColour">It will take about:</p><br>
         
         <p>Years:</p>
-        <p id="years">0</p>
+        <p id="years"><span>0</span></p>
 
         <p>Days:</p>
-        <p id="days">0</p>
+        <p id="days"><span>0</span></p>
 
         <p>Hours:</p>
-        <p id="hours">0</p>
+        <p id="hours"><span>0</span></p>
 
         <p>Minutes:</p>
-        <p id="minutes">0</p>
+        <p id="minutes"><span>0</span></p>
 
         <p>Seconds:</p>
-        <p id="seconds">0</p>
+        <p id="seconds"><span>0</span></p>
     </aside>
 
     <footer>

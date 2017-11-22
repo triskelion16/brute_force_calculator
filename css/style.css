@@ -75,7 +75,7 @@ input {
     margin: 6px 7px;
 }
 
-.check {
+#check {
     display: inline;
 }
 
@@ -94,6 +94,10 @@ input {
     border: 2px solid white;
 }
 
-span {
+.redColour {
     color: red;
+}
+
+span {
+    font-weight: 700;
 }
