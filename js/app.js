@@ -22,6 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
         var minutesElement = document.getElementById("minutes");
         var secondsElement = document.getElementById("seconds");
         
+        secondsElement.innerText = 0;
+        minutesElement.innerText = 0;
+        hoursElement.innerText = 0;
+        daysElement.innerText = 0;
+        yearsElement.innerText = 0;
+        
         /*** Password combinations ***/
         if(lowerCase.checked == true) combinations += 26;
         if(upperCase.checked == true) combinations += 26;
@@ -35,11 +41,25 @@ document.addEventListener("DOMContentLoaded", function() {
         /*** Times ***/
         seconds = combinations / speed.value;
         
-        if(seconds % 60) console.log(seconds % 60);
+        var minutes = seconds / 60;
+        var hours = minutes / 60; 
+        var days = hours / 24; 
+        var years = days / 365; 
         
+        secondsElement.innerText = Math.round(seconds % 60);
         
-        console.log(seconds);
+        if(seconds > 60) {
+            minutesElement.innerText = Math.round(minutes % 60);
+        } 
+        if(minutes > 60) {
+            hoursElement.innerText = Math.round(hours % 24);
+        }
+        if(hours > 24) {
+            daysElement.innerText = Math.round(days % 365);
+        }
+        if(days > 365) {
+            yearsElement.innerText = Math.round(years);
+        }
     });
 
-    //console.log("DONE");
 });
